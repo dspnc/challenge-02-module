@@ -8,6 +8,7 @@ body {
     background-color: #d9dcd6;
 }
 
+/* removed header class and used semantic html for header instead */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -25,6 +26,7 @@ h1 {
     color: #d9dcd6;
 }
 
+/* renamed div to nav */
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -77,6 +79,7 @@ p {
     margin-left: 20px;
 }
 
+/*consolidated margin-bottom and color instead of using 3 separate classes to do the same thing */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -91,14 +94,14 @@ p {
 }
 
 
-
+/*consolidated the 3 h3 classes since they all did the same thing */
 .benefits h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
 
-
+/*consolidated the 3 classes into 1 */
 .benefits img {
     display: block;
     margin: 10px auto;
@@ -106,7 +109,7 @@ p {
 }
 
 
-
+/*consolidated the selectors */
 .online-reputation-management, .social-media-marketing, .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
@@ -117,16 +120,18 @@ p {
 }
 
 
-
+/*consolidated the 3 selectors into 1 */
 .content img {
     max-height: 200px;
 }
 
+/* only need 1 h2 rule since they all are treated the same */
 h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
+/*used semantic footer element instead of a class */
 footer {
     padding: 30px;
     clear: both;
@@ -137,3 +142,5 @@ footer {
 footer h2 {
     font-size: 20px;
 }
+
+/*i changed the benefits div classes to id's, and left them in the code even thought they are not referenced in this sheet, just in case later someone needs to pinpoint those divs for any reason */
